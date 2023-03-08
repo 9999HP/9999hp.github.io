@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project - Job Market analysis for the Data industry</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Fabien Fricker</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html">About Me</a></li>
+						<li class="active"><a href="projects.html">Projects</a></li>
+						<li><a href="ressources.html">Ressources</a></li>
+					</ul>
+					<a href="https://public.tableau.com/app/profile/fabienfricker"><span class="icon-wrapper"><svg fill="#ffffff" width="33" height="33"  viewBox="0 0 25 35" preserveAspectRatio="xMidYMin slice" ><path d="M11.654.174V2.377H9.682v.58h1.972V5.16h.696V2.957h1.97v-.58h-1.97V.174h-.348zm6.03 2.262l-.002 1.623v1.623h-2.957v.927h2.957v3.188H18.725l.011-1.582.02-1.576 1.465-.02 1.46-.01v-.927H18.728V2.436h-.522zm-12.407.06V5.686H2.291v.925H5.277V9.801h.985V6.61h3.013v-.925H6.262V2.496H5.77zm6.086 5.27v3.593H8.06v1.188h3.304v3.596h1.28v-3.596H15.953v-1.188H12.643V7.766h-.637zm9.721 1.55v2.221h-2.012v.811h2.012v2.261h.887v-2.261H24v-.811h-2.029V9.317h-.422zm-19.111.131V11.621H0v.621H1.973v2.194H2.64v-2.194h2v-.62H2.609V9.446h-.318zm15.709 4.516v3.254h-3.016v.927h3.016v3.217h1.072v-3.216H21.74v-.928H18.754v-3.254h-.533zm-12.463.008v3.246H2.262v.928h2.957v3.189H6.32v-3.189h2.955v-.928H6.32V13.97h-.55zm6.316 4.578l.002 1.103v1.1H9.566v.812h1.971v2.262h.928l.012-1.119.017-1.143H14.463v-.812h-2V18.549h-.465z" /></svg></span></a>
+
+					<ul class="icons">
+						<li><a href="https://github.com/9999HP" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/fabien-fricker/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Tableau</span>
+									<h1>Job Market analysis for the Data industry</h1>
+								</header>
+								<span class="image fit"><a href="images/projects/jobmarket/dashboard.png" target="_blank"><img src="images/projects/jobmarket/dashboard.png" alt="" /></a></span>
+
+                                <h2>Introduction</h2>
+								<p>For this project I decided to analyse and investigate a <strong>fictitious dataset</strong> dealing with the job market in the Data & Analytics industry for the years 2016-2021.</p>
+                                <p>The main goal of this project is not to draw relevant conclusions that can be applied in the "real world" since it is a fictitious dataset but to put into practice many of Tableau's core techniques.</p>
+                                <p>For this "exercise" I'm going to put myself in the shoes of a freelancer helping a company of headhunters to find out about the state of the job market for Data Science related jobs and the skills that are generally in demand.</p>
+								<div class="row">
+                                    <div class="col-6 col-12-small">
+                                        <h3>Data Analysis Process</h3>
+                                        <ol>
+                                            <li>Data Check</li>
+                                            <li>Explore Data</li>
+                                            <li>Analyze Data</li>
+                                            <li>Dashboarding</li>
+                                            <li><s>Communicate Insights</s></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-6 col-12-small">
+                                        <h3>Techniques used</h3>
+                                        <ul>
+                                            <li>Calculated Fields</li>
+                                            <li>Filters</li>
+                                            <li>Area Charts</li>
+                                            <li>Bubble Charts</li>
+                                            <li>Box Plots</li>
+                                        </ul>
+                                    </div>
+								<h3>Key Insights</h3>
+								<div class="row">
+                                    <div class="col-12-small">
+                                <ul>
+                                    <li>It takes an average of 11 years of experience to become a director in the medical field, whereas it takes only 8 years in the digital industry.</li>
+                                    <li>Data Analyst seems to be the most sought-after position in companies in recent years. It is also the one that pays the least well.</li>
+                                    <li>There is an upward trend in the number of open positions for Data jobs.</li>
+								</ul>
+									</div>
+								</div>
+								
+								<h2>Data Check</h2>
+								<p>I start by doing a quick data check. I import the data into Tableau. I check that everything has been imported correctly and then I take some time to look at the columns and rows. I like to take my time to get to know the dataset well when I do an initial analysis. Less time will be needed for the analysis if the content of the dataset is already well-known. Following this, I check if there is a need to make changes to Data Types and Dimensions/Measures and make them if necessary.</p>
+								<p>In this case, I observe that there are quite a few null values with regard to salaries, which is quite realistic as it is relatively rare to have the salary posted directly in the job posting. To confirm this, I quickly create a Calculated Field that will count the number of Missing Values for the "Minimum Pay" Field: <br/> <code>IF ISNULL([Minimum Pay]) THEN 1 ELSE 0 END</code><br/>
+								Indeed, we end up with 1195 Missing Values, which is quite substantial, but I repeat it. The main goal of this project is not to draw conclusions applicable to reality. This is why I am not going to dwell more than that on the management of null values for this case.</p>
+								
+								<h2>Explore Data</h2>
+								<p>It is in this and the next part that I really start to explore the data. To do this, I decided to make the following graphs:</p>
+								<div class="row">
+                                    <div class="col-12-small">
+								<ul>
+									<li>The most represented industries</li>
+									<li>The experience required for each position</li>
+									<li>The number of applications per year and position</li>
+									<li>The most represented Job Titles among the following 5: Data Analyst, Data Engineer, Data Science Manager, Data Scientist, Machine Learning Engineer.</li>
+									<li>The evolution of salary by Job Title and by years of experience</li>
+								</ul>
+									</div>
+								</div>
+
+								<h2>Analyze Data</h2>
+								<p>In this part, I continue to investigate the dataset, but with more oriented questions and more advanced charts.</p>
+								<p>I’m creating a boxplot that represents the distribution of years of experience by industry and by Job Position Level. This will certainly be useful in our final dashboard.</p>
+								<p>Next, I’m focusing on a particular skill that is often asked in Job Postings (you guessed it: Tableau) and which Job Titles require this skill the most. Also related to Tableau, I’m also examining which level of experience and which Position Level require this skill the most.</p>
+								<p>Once this is done, I'm going to start creating the final dashboard and deciding which sheets to include in the dashboard. It is not necessarily useful to use all our sheets in the final Dashboard as they may not provide relevant information. For example, our few charts that cover "Tableau" may not be relevant in the final dashboard</p>
+								
+								<h2>Dashboarding</h2>
+								<p>Thanks to all the graphs made earlier, I’m now able to create a Dashboard and make recommendations based on my findings. But before that, I always ask myself at least 3 questions before creating a dashboard:</p>
+								<div class="row">
+                                    <div class="col-12-small">
+								<ol>
+									<li><b>Who is my audience ?</b> As a fictious Data Analyst consultant, my audience is recruiters and headhunters from a recruiting company. They are quite familiar with the field, therefore they’ll understand all of the previous metrics I have covered earlier.</li>
+									<li><b>What do they need ? What’s their end goal ?</b> They need to know the trends in the job market for positions in Data Science. </li>
+									<li><b>How can a dashboard help them ?</b> A dashboard is perfect to give them an overview of the market over several years. It also allows us to highlight potential insights found</li>
+								</ol>
+									</div>
+								</div>
+								<p>So for the dashboard, taking into account the information detailed above, I decided to use the following charts:</p>
+								<div class="row">
+                                    <div class="col-12-small">
+								<ul>
+									<li>Postings over time</li>
+									<li>Which Job titles are the most sought after</li>
+									<li>Salary Analysis</li>
+									<li>Years of Experience Analysis</li>
+								</ul>
+									</div>
+								</div>
+								<p>I also added 2 KPIs that I created during the elaboration of the dashboard: The number of Applicants and the number of Job Postings </p>
+
+								<ul class="actions special">
+									<li><a href="https://public.tableau.com/app/profile/fabienfricker/viz/JobMarketAnalysisfortheDataIndustry/JobAnalytics" class="button primary">View on Tableau Public</a></li>
+								</ul>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h3>Email</h3>
+						<p><a href="me@fabienfricker.ch">me@fabienfricker.ch</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://github.com/9999HP" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/fabien-fricker/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+		<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>Fabien Fricker 2023</li></ul>
+			</div>
+
+	</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
