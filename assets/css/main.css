@@ -3463,6 +3463,10 @@ input, select, textarea {
 				#intro + #header {
 					margin-top: -14rem;
 				}
+			
+				#intro img {
+					display: none;
+				}
 
 		}
 
@@ -3488,6 +3492,9 @@ input, select, textarea {
 					display: none;
 				}
 
+				#intro img {
+					display: none;
+				}
 		}
 
 /* Header */
