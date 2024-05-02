@@ -3671,16 +3671,16 @@ input, select, textarea {
 			text-decoration: none;
 		  }
 		
-		#nav .icon-wrapper {
+		  #nav .icon-wrapper {
 			display: inline-block;
-			padding: 0 0.5rem 0 0;
+			padding: 0 0.9rem 0 0;
 			vertical-align: middle;
 			text-decoration: none;
 		  }
 		  
 		#nav .icon-wrapper svg {
 			display: inline-block;
-			padding: 0 0.5rem 0 0;
+			padding: 0 0 0 0;
 			vertical-align: middle;
 			text-decoration: none;
 			pointer-events: bounding-box;
