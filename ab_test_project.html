@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A/B Testing Analysis using Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Fabien Fricker</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html">About Me</a></li>
+						<li class="active"><a href="projects.html">Projects</a></li>
+						<li><a href="ressources.html">Ressources</a></li>
+					</ul>
+					<a href="https://public.tableau.com/app/profile/fabienfricker"><span class="icon-wrapper"><svg fill="#ffffff" width="33" height="36"  viewBox="0 -4 33 36"><path d="M11.654.174V2.377H9.682v.58h1.972V5.16h.696V2.957h1.97v-.58h-1.97V.174h-.348zm6.03 2.262l-.002 1.623v1.623h-2.957v.927h2.957v3.188H18.725l.011-1.582.02-1.576 1.465-.02 1.46-.01v-.927H18.728V2.436h-.522zm-12.407.06V5.686H2.291v.925H5.277V9.801h.985V6.61h3.013v-.925H6.262V2.496H5.77zm6.086 5.27v3.593H8.06v1.188h3.304v3.596h1.28v-3.596H15.953v-1.188H12.643V7.766h-.637zm9.721 1.55v2.221h-2.012v.811h2.012v2.261h.887v-2.261H24v-.811h-2.029V9.317h-.422zm-19.111.131V11.621H0v.621H1.973v2.194H2.64v-2.194h2v-.62H2.609V9.446h-.318zm15.709 4.516v3.254h-3.016v.927h3.016v3.217h1.072v-3.216H21.74v-.928H18.754v-3.254h-.533zm-12.463.008v3.246H2.262v.928h2.957v3.189H6.32v-3.189h2.955v-.928H6.32V13.97h-.55zm6.316 4.578l.002 1.103v1.1H9.566v.812h1.971v2.262h.928l.012-1.119.017-1.143H14.463v-.812h-2V18.549h-.465z" /></svg></span></a>
+
+					<a href="https://medium.com/@fabienfricker"><span class="icon-wrapper"><svg fill="#ffffff" width="33" height="36"  viewBox="0 0 33 36"><path d="M30.955 16c0 3.951-0.661 7.166-1.483 7.166s-1.483-3.215-1.483-7.166 0.661-7.166 1.483-7.166 1.483 3.215 1.483 7.166zM27.167 16c0 4.412-1.882 8.001-4.212 8.001s-4.225-3.589-4.225-8.001 1.894-8.001 4.225-8.001 4.212 3.589 4.212 8.001zM17.919 16c-0.014 4.67-3.803 8.45-8.475 8.45-4.68 0-8.475-3.794-8.475-8.475s3.794-8.475 8.475-8.475c2.351 0 4.479 0.957 6.014 2.504l0.001 0.001c1.521 1.531 2.46 3.641 2.46 5.97 0 0.009 0 0.018-0 0.026v-0.001z"></svg></span></a>
+
+					<ul class="icons">
+						<li><a href="https://github.com/9999HP" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/fabien-fricker/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Python</span>
+									<h1>A/B Testing Analysis</h1>
+								</header>
+								<span class="image fit"><a href="images/projects/tech_layoffs/dashboard.png" target="_blank"><img src="images/projects/tech_layoffs/dashboard.png" alt="" /></a></span>
+                                
+                                <h2>Introduction</h2>
+                                <p>The goal is to explore a dataset that covers the Tech Layoffs in the US between January 2022 and January 2023.</p>
+                                <p>This dataset comes from Kaggle and has been widely shared and discussed on Twitter. So I thought it would be interesting to see what insights could be gleaned from such a dataset, especially when we see that the tech sector has fallen a lot on the stock market in recent months.</p>
+                                
+                                <div class="row">
+                                    <div class="col-6 col-12-small">
+                                        <h3>Data Analysis Process</h3>
+                                        <ol>
+                                            <li>Data Check</li>
+                                            <li>Explore Data</li>
+                                            <li><s>Analyze Data</s></li>
+                                            <li>Dashboarding</li>
+                                            <li><s>Communicate Insights</s></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-6 col-12-small">
+                                        <h3>Techniques used</h3>
+                                        <ul>
+                                            <li>Average Reference Lines</li>
+                                            <li>Parameter + Filter (Top N)</li>
+                                            <li>LOD expressions</li>
+                                            <li>Calculated Fields + Functions (IF, COUNTD, etc.)</li>
+                                            <li>Data Splits</li>
+                                        </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12-small">
+                                <h3>Key Insights</h3>
+                                <ul>
+                                    <li>Top 5 companies represents 44% of total layoffs !</li>
+                                    <li>Amazon alone make up 13% of total layoffs and 100% of total layoffs for the entire E-commerce industry.</li>
+                                    <li>23’000 layoffs occurred on 5th January 2023 representing 32% of all 2022 cases.</li>
+                                </ul>
+                                    </div>
+                                </div>
+                                <h2>Data Check</h2>
+                                <p>First, to be able to use the Total Layoffs column, we just have to recreate a column and remove all the strings to keep only the numbers. </p>
+                                <p>Then, I have to change the column "Impacted Workforce" datatype from string to number as it is a percentage.</p>
+                                <p>For some rows, we do not know the precise number of layoffs. Yet, the impacted_workforce_percentage show 100% and the source does not indicate whether this is a default value or not. For my part, I consider this to be a correct figure and use these percentages to calculate the number of companies that went bankrupt.</p>
+                                
+                                <h2>Explore Data</h2>
+								<p>We are in the data exploration phase, the aim is not to carry out in-depth statistical analyses but simply to identify patterns and potential relationships in the data that can lead to important insights. Here are the charts I decided to build to explore this dataset:</p>
+                                <div class="row">
+                                    <div class="col-12-small">
+                                <ul>
+									<li>A line chart that displays the number of redundancies made each day.</li>
+									<li>A dynamic bar chart that shows the companies that laid off the most during the period.</li>
+									<li>Another bar chart that represents the most affected industries.</li>
+									<li>A KPI that displays the number of companies that went bankrupt.</li>
+									<li>A KPI that displays the total number of layoffs and another that shows the number of companies affected by layoffs.</li>
+								</ul>
+                                <p></p>
+                                <h2>Dashboarding</h2>
+                                <p>The dataset does not have many columns so the number of useful charts that can be made is rather small and I think I covered it pretty well with the previous charts.</p>
+                                <p>Therefore, I'll simply use the charts previously made and add some features to them such as: Annotations, Reference Lines, relevant and insightful titles and subtitles. </p>
+                                <p>That's it! You can see the final result at the beginning of this article or you can interact with it by clicking on the button below.</p>
+
+                                <ul class="actions special">
+									<li><a href="https://github.com/9999HP/ab-testing-w-python" class="button primary">View on GitHub</a></li>
+								</ul>
+                                    </div>
+                                </div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h3>Email</h3>
+						<p><a href="me@fabienfricker.ch">me@fabienfricker.ch</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://github.com/9999HP" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/fabien-fricker/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+		<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>Fabien Fricker 2023</li></ul>
+			</div>
+
+	</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
